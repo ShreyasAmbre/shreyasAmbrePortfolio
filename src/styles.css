@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --text-color : #F58220;
+    --btn-background-color: #F58220;
+    --btn-color: #ffffff
+}
+
+.btnClass{
+    background-color: var(--btn-background-color);
+    color: var(--btn-color)
+}
+
+.nav-link{
+    color: #053F5C !important;
+}
+
+.primary{
+    color: var(--text-color) !important;
+}
+
+.customeTitle{
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+}

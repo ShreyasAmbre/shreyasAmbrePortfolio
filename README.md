@@ -1,27 +1,37 @@
-# ShreyasAmbrePortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+Portfolio v1.0
+==========================================================================================================================
 
-## Development server
+Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Technology :- HTML, CSS, ANGULAR, BOOTSTRAP (NO MATERIAL)
+2. Content :- (By Self)
+=> Home:- 
+		a. Title Section requires 				:-  Title Content and Portfolio Image
+		b. Skill Set Section requires 			:-  Logos of My Technology
+		c. Introduction to urself requires		:-	Introduce your self
+		d. Technology on what you know			:- 	HTML, CSS, JS & ANGULAR
+		e. Why Choose Me & Experience Section	:- 	Your Expierence, Responsibilities, Different roles, Strength Point	
+		f. Projects								:- 	Image and Description
+		g. Statistics							:- 	Projects, Awards, Experience, Technology
+		h. footer								:- Contact Number, Social Media Handles, email
+3. Number of pages :- Home, About, Contact. (for version 1.0)
+4. Color Schemes :- White Black and Orange
+5. Fonts :- Open Sans Regular & (SemiBold, Montserrat)
+6. Website Structure :- (for reference) https://template-kit.rootlayers.com/portosia/?storefront=envato-elements#
 
-## Code scaffolding
+==========================================================================================================================
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Portfolio v1.0 Started :- 12/08/2022
 
-## Build
+1.  Gathering Requirements (DONE)
+2. Building Project Structure
+-> Create new Project (DONE)
+-> Add Lazy Load Component (DONE)
+-> Create Header & Footer (DONE)
+3. Home Page Development
+4. About Page Development
+5. Contact Page Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+==========================================================================================================================
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

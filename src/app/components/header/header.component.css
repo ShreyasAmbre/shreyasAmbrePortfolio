@@ -1,0 +1,15 @@
+
+.navBtn{
+    background-color: var(--btn-background-color);
+    color: var(--btn-color) !important;
+    border-radius: 5px;
+}
+
+.navtitles{
+    color: var(--text-color);
+    font-size: 26px;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.10)!important;
+}
