@@ -3,8 +3,32 @@
 :root {
     --text-color : #F58220;
     --btn-background-color: #F58220;
-    --btn-color: #ffffff
+    --btn-color: #ffffff;
+    --secondary-color: #053F5C;
 }
+
+/* Custom Scrollbar Styling  */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--btn-background-color); 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Custom Scrollbar Styling End  */
 
 .btnClass{
     background-color: var(--btn-background-color);
@@ -22,4 +46,4 @@
 .customeTitle{
     font-size: 27px;
     font-family: 'Courier New', Courier, monospace;
-}
+} 
