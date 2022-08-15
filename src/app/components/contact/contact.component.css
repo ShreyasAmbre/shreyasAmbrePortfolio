@@ -1,3 +1,7 @@
+.contactContainerColor{
+    background-color: #f0fcff;
+}
+
 .contactTitle{
     color: var( --secondary-color );
     font-family: "Poppins", Sans-serif;
@@ -30,4 +34,30 @@
 .contactDescription{
     font-family: "Poppins", Sans-serif;
     font-size: 16px;
+}
+
+.socialHandleContainer{
+    background-color: #F2F7FB; 
+    border-radius: 10px;
+    width: 88%;
+}
+
+.contactSocialMediaImg{
+    width: 39px;
+    height: 39px;
+    padding: 2%;
+}
+
+.contactSocialMediaText{
+    color: var(--secondary-color);
+    font-family: 'Poppins', Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.contactInputFiled{
+    height: 50px;
+    width: 80%;
+    margin: 3% 0px;
 }

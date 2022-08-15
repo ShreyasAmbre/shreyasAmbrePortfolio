@@ -24,14 +24,14 @@ Requirements
 
 Portfolio v1.0 Started :- 12/08/2022
 
-1.  Gathering Requirements (DONE)
-2. Building Project Structure
--> Create new Project (DONE)
--> Add Lazy Load Component (DONE)
--> Create Header & Footer (DONE)
+1.  Gathering Requirements (DONE) 12/08/2022
+2. Building Project Structure 12/08/2022
+-> Create new Project (DONE) 12/08/2022
+-> Add Lazy Load Component (DONE) 12/08/2022
+-> Create Header & Footer (DONE) 13/08/2022
 3. Home Page Development
 4. About Page Development
-5. Contact Page Development
+5. Contact Page Development (DONE) 15/08/2022
 
 ==========================================================================================================================
 

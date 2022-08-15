@@ -32,7 +32,12 @@
 
 .btnClass{
     background-color: var(--btn-background-color);
-    color: var(--btn-color)
+    color: var(--btn-color);
+    height: 40px;
+    width: 140px !important;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins", Sans-serif !important;
 }
 
 .nav-link{
