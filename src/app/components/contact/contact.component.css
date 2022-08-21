@@ -2,14 +2,6 @@
     background-color: #f0fcff;
 }
 
-.contactTitle{
-    color: var( --secondary-color );
-    font-family: "Poppins", Sans-serif;
-    font-size: 52px;
-    font-weight: 600;
-    line-height: 1.3em;
-}
-
 .subTitleDivider{
     height: 2px; 
     /* width: 6%;  */
@@ -21,18 +13,23 @@
     border-radius: 5px;
 }
 
+.contactTitle{
+    color: var( --secondary-color );
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
 .contactSubTitle{
     color: var( --secondary-color );
-    font-family: "Poppins", Sans-serif;
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 0.2em;
     margin-bottom: 20px;
     display: inline-block;
 }
 
 .contactDescription{
-    font-family: "Poppins", Sans-serif;
     font-size: 16px;
 }
 
@@ -50,10 +47,9 @@
 
 .contactSocialMediaText{
     color: var(--secondary-color);
-    font-family: 'Poppins', Sans-serif;
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 0.2em;
 }
 
 .contactInputFiled{
@@ -61,3 +57,4 @@
     width: 80%;
     margin: 3% 0px;
 }
+

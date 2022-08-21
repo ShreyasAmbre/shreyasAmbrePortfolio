@@ -29,7 +29,7 @@ Portfolio v1.0 Started :- 12/08/2022
 -> Create new Project (DONE) 12/08/2022
 -> Add Lazy Load Component (DONE) 12/08/2022
 -> Create Header & Footer (DONE) 13/08/2022
-3. Home Page Development
+3. Home Page Development (IN PROGRESS) 20th and 21st Aug 2022
 4. About Page Development
 5. Contact Page Development (DONE) 15/08/2022
 

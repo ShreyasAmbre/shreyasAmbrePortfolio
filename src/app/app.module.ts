@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
+import { MainServiceService } from './services/main-service.service'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { IndexComponent } from './components/index/index.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MainServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

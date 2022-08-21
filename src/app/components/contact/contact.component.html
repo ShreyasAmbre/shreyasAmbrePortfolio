@@ -5,9 +5,9 @@
                 <div class="row p-0 m-0">
                     <div class="col-12">
                         <div class="subTitleDivider"></div>&nbsp;
-                        <p class="contactSubTitle"> <b>Contact</b> </p>
-                        <h2 class="contactTitle">Get In Touch <br>With Me.</h2>
-                        <p class="contactDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
+                        <p class="contactSubTitle subTitleFont"> <b>Contact</b> </p>
+                        <h2 class="contactTitle titleFont">Get In Touch <br>With Me.</h2>
+                        <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
                             dolore molestiae reiciendis nostrum recusandae ab facilis quos repellendus architecto at eaque nulla itaque! Laborum, cum!</p>
                     </div>
                     
@@ -23,7 +23,9 @@
                 </div>
     
                 <div class="row p-0 m-0">
-                    <button type="button" class="btnClass my-2 mx-2">Contact Me</button>
+                    <button type="button" class="btnClass my-2 mx-2" (click)="service.scrollToContactForm(contactForm)">
+                        <b>Contact Me</b>
+                    </button>
                 </div>
             </div>
             <div class="col-6">
@@ -42,9 +44,9 @@
                 <div class="row p-0 m-0">
                     <div class="col-12">
                         <div class="subTitleDivider"></div>&nbsp;
-                        <p class="contactSubTitle"> <b>Say Hello</b> </p>
-                        <h2 class="contactTitle">Take a Coffee<br>& Drop Your Mail.</h2>
-                        <p class="contactDescription">
+                        <p class="contactSubTitle subTitleFont"> <b>Say Hello</b> </p>
+                        <h2 class="contactTitle titleFont">Take a Coffee<br>& Drop Your Mail.</h2>
+                        <p class="contactDescription descriptionFont">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                         </p>
@@ -58,7 +60,7 @@
                                 <img src="assets/images/google.png" alt="googleicon" class="contactSocialMediaImg">
                             </div>
                             <div class="col-9 px-1">
-                                <span class="contactSocialMediaText">gmail.com/shreyasambre00</span>
+                                <span class="contactSocialMediaText descriptionFont">gmail.com/shreyasambre00</span>
                             </div>
                         </div>
                     </div>
@@ -71,7 +73,7 @@
                                 <img src="assets/images/linkedin.png" alt="googleicon" class="contactSocialMediaImg">
                             </div>
                             <div class="col-9 px-1">
-                                <span class="contactSocialMediaText">linkedin.com/shreyasambre</span>
+                                <span class="contactSocialMediaText descriptionFont">linkedin.com/shreyasambre</span>
                             </div>
                         </div>
                     </div>
@@ -84,7 +86,7 @@
                                 <img src="assets/images/twitter.png" alt="googleicon" class="contactSocialMediaImg">
                             </div>
                             <div class="col-9 px-1">
-                                <span class="contactSocialMediaText">twitter.com/shreyasambre</span>
+                                <span class="contactSocialMediaText descriptionFont">twitter.com/shreyasambre</span>
                             </div>
                         </div>
                     </div>
@@ -100,7 +102,7 @@
             </div>
             <div class="col-6" style="margin-top: 3%;">
 
-                <form>
+                <form #contactForm>
                     <div class="form-group">
                         <input class="form-control form-control-lg my-4 bg-light" type="text" placeholder="Name">
                     </div>
@@ -114,7 +116,7 @@
                         <textarea class="form-control form-control-lg my-4 bg-light" type="text" rows="4" cols="50" placeholder="Message"></textarea>
                         <!-- <textarea class="form-control contactInputFiled" rows="10" placeholder="Message"></textarea> -->
                     </div>
-                    <button type="button" class="btnClass">Submit</button>
+                    <button type="button" class="btnClass"><b>Submit</b></button>
                   </form>
             </div>
         </div>

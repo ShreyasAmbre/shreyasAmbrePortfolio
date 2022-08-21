@@ -7,6 +7,21 @@
     --secondary-color: #053F5C;
 }
 
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(./assets/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url(./assets/fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(./assets/fonts/OpenSans/OpenSans-Bold.ttf);
+}
+
 /* Custom Scrollbar Styling  */
 ::-webkit-scrollbar {
     width: 7px;
@@ -30,6 +45,21 @@
 
 /* Custom Scrollbar Styling End  */
 
+/* TITLE FONT STYLE  */
+.titleFont{
+    font-family: 'OpenSans-Bold' !important;
+}
+
+.subTitleFont{
+    font-family: 'OpenSans-SemiBold' !important;
+}
+
+.descriptionFont{
+    font-family: 'OpenSans-Regular' !important;
+}
+
+/* TITLE FONT STYLE  */
+
 .btnClass{
     background-color: var(--btn-background-color);
     color: var(--btn-color);
@@ -52,3 +82,14 @@
     font-size: 27px;
     font-family: 'Courier New', Courier, monospace;
 } 
+
+
+
+.form-control:focus  {
+    border-color: var(--btn-background-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(253, 133, 13, 0.373) !important;
+}
+
+.form-control{
+    font-family: 'OpenSans-Regular' !important;
+}
