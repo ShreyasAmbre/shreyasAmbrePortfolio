@@ -1,8 +1,8 @@
 
-Portfolio v1.0
+## Portfolio v1.0
 ==========================================================================================================================
 
-Requirements
+## Requirements
 
 1. Technology :- HTML, CSS, ANGULAR, BOOTSTRAP (NO MATERIAL)
 2. Content :- (By Self)
@@ -22,7 +22,7 @@ Requirements
 
 ==========================================================================================================================
 
-Portfolio v1.0 Started :- 12/08/2022
+## Portfolio v1.0 Started :- 12/08/2022
 
 1.  Gathering Requirements (DONE) 12/08/2022
 2. Building Project Structure 12/08/2022
@@ -30,6 +30,16 @@ Portfolio v1.0 Started :- 12/08/2022
 -> Add Lazy Load Component (DONE) 12/08/2022
 -> Create Header & Footer (DONE) 13/08/2022
 3. Home Page Development (IN PROGRESS) 20th and 21st Aug 2022
+-> Welcome & Basic Introduction Msg and Portfolio Image (Structure Done)
+-> Skill Set Banner (Structure Done)
+-> About Me Section (Structure Done)
+-> My Qualitites 
+-> Experience  (Structure Done)
+-> Achievment 
+-> Qualification
+-> Projects (Structure Done)
+-> Download Resume Strip 
+
 4. About Page Development
 5. Contact Page Development (DONE) 15/08/2022
 
