@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainServiceService } from 'src/app/services/main-service.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: MainServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  downloadResume(){
+    this.service.getResumeDownload("Shreyas-Ambre-Resume-v3", "assets/docs/Shreyas-Ambre-Resume-v3.pdf")
   }
 
 }

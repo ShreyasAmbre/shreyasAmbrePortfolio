@@ -5,6 +5,9 @@
     --btn-background-color: #F58220;
     --btn-color: #ffffff;
     --secondary-color: #053F5C;
+    --light-black-subtitle-color: #585858;
+    --recommendation-background: antiquewhite;
+    --recommendation-Profile-background: #F58220;
 }
 
 @font-face {
@@ -67,6 +70,17 @@
     width: 140px !important;
     border: none;
     border-radius: 8px;
+    font-family: "Poppins", Sans-serif !important;
+}
+
+.btnClassOutline{
+    background-color: #ffffff;
+    color: var(--btn-color);
+    height: 40px;
+    width: 140px !important;
+    border: 2px solid var(--btn-background-color);;
+    border-radius: 8px;
+    color: var(--btn-background-color);
     font-family: "Poppins", Sans-serif !important;
 }
 

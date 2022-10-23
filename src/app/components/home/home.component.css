@@ -4,7 +4,7 @@
 
 .contactTitle{
     color: var( --secondary-color );
-    font-family: "Poppins", Sans-serif;
+    /* font-family: "Poppins", Sans-serif; */
     font-size: 52px;
     font-weight: 600;
     line-height: 1.3em;
@@ -23,7 +23,7 @@
 
 .contactSubTitle{
     color: var( --secondary-color );
-    font-family: "Poppins", Sans-serif;
+    /* font-family: "Poppins", Sans-serif; */
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2em;
@@ -32,7 +32,6 @@
 }
 
 .contactDescription{
-    font-family: "Poppins", Sans-serif;
     font-size: 16px;
 }
 
@@ -48,6 +47,37 @@
 }
 
 .contactDescription{
-    font-family: "Poppins", Sans-serif;
     font-size: 16px;
+}
+
+.homeBtnClass{
+    width: 175px !important; 
+    height: 45px !important;
+}
+
+.recommdationProfilePic{
+    background-color: var(--recommendation-Profile-background);
+    border-radius: 50%;
+    height: 68px;
+    /* width: 85px; */
+}
+
+.recommandationContainer{
+    width: 90%; 
+    height: 350px;  
+    background-color: var(--recommendation-background); 
+    border-radius: 30px;
+}
+
+.recommandationName{
+    font-size: 20px;
+}
+
+.recommandationDesignation{
+    font-size: 15px;
+    color: var(--light-black-subtitle-color);
+}
+
+.recommandationDescription{
+    font-size: 22px;
 }

@@ -16,10 +16,11 @@ export class HeaderComponent implements OnInit {
   constructor( private elementRef: ElementRef,) { }
 
   ngOnInit(): void {
+    // this.typingEffect()
+  }
 
-    console.log("ELEMENT REF ===>", this.heading, this.headingTxt.length)
-
-    this.typingEffect()
+  ngAfterViewInit() {
+    // this.typingEffect()
   }
 
   typingEffect(){
