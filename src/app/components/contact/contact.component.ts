@@ -12,4 +12,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  goToSocialHandle(navigateToPage: string){
+    this.service.openSocialHandle(navigateToPage)
+  }
 }

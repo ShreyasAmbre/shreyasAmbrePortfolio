@@ -51,3 +51,15 @@
 
 ==========================================================================================================================
 
+Hositing Guideline on GitHub Pages
+
+1. Firstly you need to create a repo on github and push your code into you repository 
+2. Then, add this library on your angular project " ng add angular-cli-ghpages "
+3. Again push that code in ur repo
+4. Now using " ng deploy --base-href=/shreyasAmbrePortfolio/ " this command it helps to creat a production built and deploy automatically on github pagez 
+5. Onces Success, got to you repo and click on settings thier you can find the Hositing link and Visit Site Button to have a look of deployed website.
+
+==========================================================================================================================
+
+
+

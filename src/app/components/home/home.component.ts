@@ -22,4 +22,7 @@ export class HomeComponent implements OnInit {
     this.service.getResumeDownload("Shreyas-Ambre-Resume-v3", "assets/docs/Shreyas-Ambre-Resume-v3.pdf")
   }
 
+  goToSocialHandle(navigateToPage: string){
+    this.service.openSocialHandle(navigateToPage)
+  }
 }

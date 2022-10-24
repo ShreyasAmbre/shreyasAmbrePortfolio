@@ -15,20 +15,20 @@
                     
 
                     <div class="row p-0 m-0" style="height: 10%; text-align: center;">
-                        <div class="col-1"><img width="25" height="25" src="assets/images/google.png" alt="googleicon"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/linkedin.png" alt="linkedinicon"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/twitter.png" alt="twitterv"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/github.png" alt="twitterv"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/whatsapp.png" alt="whatsappicon"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/instagram.png" alt="instagramicon"></div>
-                        <div class="col-1"><img width="25" height="25" src="assets/images/facebook.png" alt="facebookicon"></div>
+                        <div class="col-1" (click)="goToSocialHandle('gmail')"><img width="25" height="25" src="assets/images/google.png" alt="googleicon"></div>
+                        <div class="col-1" (click)="goToSocialHandle('linkedin')"><img width="25" height="25" src="assets/images/linkedin.png" alt="linkedinicon"></div>
+                        <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/twitter.png" alt="twitterv"></div> -->
+                        <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/github.png" alt="twitterv"></div>
+                        <div class="col-1" (click)="goToSocialHandle('whatsapp')"><img width="25" height="25" src="assets/images/whatsapp.png" alt="whatsappicon"></div>
+                        <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/instagram.png" alt="instagramicon"></div> -->
+                        <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/facebook.png" alt="facebookicon"></div> -->
                     </div>
     
                 </div>
     
                 <div class="row p-0 mx-0 my-2">
                     <button type="button" class="btnClass homeBtnClass my-3 mx-2" (click)="navigateTo('contact')">
-                        <b>Contact Me</b>
+                        <b>Let's Connect</b>
                     </button>
                     <button type="button" class="btnClassOutline homeBtnClass my-3 mx-2" (click)="downloadResume()">
                         <b>Download Resume</b>
@@ -75,8 +75,9 @@
             <div class="col-7 text-center">
                 <p class="contactSubTitle subTitleFont"><b>Introduction</b> </p>
                 <h2 class="contactTitle titleFont">About Me.</h2>
-                <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
-                    dolore molestiae reiciendis nostrum recusandae ab facilis quos repellendus architecto at eaque nulla itaque! Laborum, cum!</p>
+                <p class="contactDescription descriptionFont">
+                    I am a professional front-end developer with 3+ years of experience, Passionate about my work, and always eager to grow my skill set to improve the product I m working on. Always ready to take responsibility, Quick Learner, Team player, Love to help colleagues. 
+                </p>
             </div>
         </div>
 
@@ -90,14 +91,20 @@
                         <h2 class="contactTitle titleFont">With 3+ Years of</h2>
                         <h2 class="contactTitle titleFont">Experience in Angular</h2>
                         <h2 class="contactTitle titleFont"> Development</h2>
-                        <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt </p>
+                        <p class="contactDescription descriptionFont">
+                           <li> Working on client requirements using the Angular framework.</li>
+                           <li> Fixing bugs assign by the testing team.</li>
+                           <li> Reporting to team leader on daily task reports.</li>
+                           <li> Attending meetings with clients and project manager.</li>
+                           <li> Collaborating with different teams on building websites.</li>
+                           <li> Attending live issue in case of any arrivales.</li>
+                           <li> Guiding juniors, Interns in their tasks.</li>
+                        </p>
                     </div>
                 </div>
-
-    
-                <div class="row p-0 mx-0 my-2">
-                    <button type="button" class="btnClass my-2 mx-2" style="width: 170px !important; height: 45px !important;">
-                        <b>Contact Me</b>
+                <div class="row p-0 mx-0">
+                    <button type="button" class="btnClassOutline homeBtnClass my-3 mx-2" (click)="downloadResume()">
+                        <b>Download Resume</b>
                     </button>
                 </div>
             </div>
@@ -111,7 +118,7 @@
 
 
 <!-- PROJECT SECTION START -->
-<div style="height: 1260px;">
+<div style="height: 920px;">
     <div class="container-fluid" style="margin: 9% 0%; background-color: #f1faff;">
         <div class="container" style="position: relative;">
             <div class="row py-5" style="height: 350px;">
@@ -119,90 +126,47 @@
                     <div class="subTitleDivider"></div>&nbsp;
                     <p class="contactSubTitle subTitleFont"> <b>Projects</b> </p>
                     <h2 class="contactTitle titleFont">Real Time Projects</h2>
-                    <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
-                        dolore molestiae reiciendis nostrum recusandae ab facilis quos repellendus architecto at eaque nulla itaque! Laborum, cum!</p>
+                    <p class="contactDescription descriptionFont">
+                        Those are some of the projects I would like to showcase it. Where I have used my frontend skill set. There are some industry-level projects & some of them are my personal projects. Where I have used Angular & Ionic Framework. 
+                    </p>
                 </div>
     
                 <div class="row my-3 justify-content-center" style="position: absolute; top:65%">
                     <div class="col-4 mb-4">
-                        <div class="card">
+                        <div class="card h-100">
                             <div class="card-body p-0">
                                 <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
                                 <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
+                                    <h5 class="card-title">Car Pulling App</h5>
+                                    <p class="card-text">This project is built using Angular Framework concepts. This project helps to ask for the lift if any one of them are traveling through the same route which helps to reduce traffic problem & air pollution.</p>
+                                    <button class="btnClass my-1">Github Link</button>
                                     
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <div class="card">
+                        <div class="card h-100">
                             <div class="card-body p-0">
                                 <img src="assets/images/project2.jpg" alt="project-image" style="width: 100%;">
                                 <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
+                                    <h5 class="card-title">Team Management App</h5>
+                                    <p class="card-text">This app is built using concepts of Angular Framework & Firebase web service such as Real Time Database, Authentication, and Broadcasting of messages, It has role-based login whereas Admin can create dynamic UI, Where the team leader or project manager can assign tasks to employee working under him.</p>
+                                    <button class="btnClass my-1">Github Link</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body p-0">
+                                <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
+                                <div class="p-3">
+                                    <h5 class="card-title">Real Estate Management App</h5>
+                                    <p class="card-text">This project is build with help of Angular as frontend & REST API's of backend. It help to onbard the client after client Purchace the Flat and their documentation and calcuation of Area is handled on this platform from start to end.</p>
+                                    <button class="btnClass my-1">Github Link</button>
                                     
                                 </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
-                                <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <img src="assets/images/project2.jpg" alt="project-image" style="width: 100%;">
-                                <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
-                                <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body p-0">
-                                <img src="assets/images/project2.jpg" alt="project-image" style="width: 100%;">
-                                <div class="p-3">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <button class="btnClass my-1">Go somewhere</button>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -221,9 +185,10 @@
         <div class="row py-3 px-0 justify-content-center">
             <div class="col-7 text-center">
                 <p class="contactSubTitle"><b>Received</b> </p>
-                <h2 class="contactTitle">Recommendation</h2>
-                <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
-                    dolore molestiae reiciendis nostrum recusandae ab facilis quos repellendus architecto at eaque nulla itaque! Laborum, cum!</p>
+                <h2 class="contactTitle">Recommendation's</h2>
+                <p class="contactDescription descriptionFont">
+                    Below are some of the best recommendation's given by professionals with whom I have worked in my entire career journey. It helps to motivate me more to upgrade my professional growth.
+                </p>
             </div>
         </div>
 

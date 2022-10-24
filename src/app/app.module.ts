@@ -9,8 +9,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
-import { MainServiceService } from './services/main-service.service'
-
+import { MainServiceService } from './services/main-service.service';
+import { environment } from "src/environments/environment";
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { MainServiceService } from './services/main-service.service'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [MainServiceService],
   bootstrap: [AppComponent]
