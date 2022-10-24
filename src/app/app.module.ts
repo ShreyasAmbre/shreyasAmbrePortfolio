@@ -13,6 +13,18 @@ import { MainServiceService } from './services/main-service.service';
 import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
+
+const config = {
+  apiKey: "AIzaSyCpALxydPCsA4EXBWAkini0flkt1_4D8nU",
+    authDomain: "shreyasambreportfoliofirbseapp.firebaseapp.com",
+    projectId: "shreyasambreportfoliofirbseapp",
+    storageBucket: "shreyasambreportfoliofirbseapp.appspot.com",
+    messagingSenderId: "485676699494",
+    appId: "1:485676699494:web:76a996c03c10d6357142a7",
+    measurementId: "G-5PX06KD7L3"
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +38,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(config),
     AngularFirestoreModule
   ],
   providers: [MainServiceService],

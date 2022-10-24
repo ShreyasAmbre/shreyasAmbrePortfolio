@@ -4,15 +4,6 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyCpALxydPCsA4EXBWAkini0flkt1_4D8nU",
-    authDomain: "shreyasambreportfoliofirbseapp.firebaseapp.com",
-    projectId: "shreyasambreportfoliofirbseapp",
-    storageBucket: "shreyasambreportfoliofirbseapp.appspot.com",
-    messagingSenderId: "485676699494",
-    appId: "1:485676699494:web:76a996c03c10d6357142a7",
-    measurementId: "G-5PX06KD7L3"
-  }
 };
 
 /*
