@@ -3,17 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
 import { MainServiceService } from './services/main-service.service';
-import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
+import { ApiModule, BASE_PATH } from 'elasticemail-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 const config = {
   apiKey: "AIzaSyCpALxydPCsA4EXBWAkini0flkt1_4D8nU",
@@ -33,15 +31,18 @@ const config = {
     // ContactComponent,
     HeaderComponent,
     FooterComponent,
-    IndexComponent
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+
+    ApiModule,
+    HttpClientModule
   ],
-  providers: [MainServiceService],
+  providers: [MainServiceService, {provide: BASE_PATH, useValue: 'http://127.0.0.1:8080'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

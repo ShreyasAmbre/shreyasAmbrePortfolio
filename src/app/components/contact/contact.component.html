@@ -7,29 +7,57 @@
                         <div class="subTitleDivider"></div>&nbsp;
                         <p class="contactSubTitle subTitleFont"> <b>Contact</b> </p>
                         <h2 class="contactTitle titleFont">Get In Touch <br>With Me.</h2>
-                        <p class="contactDescription descriptionFont">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti saepe, laboriosam eum accusantium nesciunt 
-                            dolore molestiae reiciendis nostrum recusandae ab facilis quos repellendus architecto at eaque nulla itaque! Laborum, cum!</p>
+                        <p class="contactDescription descriptionFont">
+                            If you have any questions and want to get in touch with me, below are social networking sources where I will be.
+                            available their for quick response on your question.
+                        </p>
                     </div>
                     
     
                 </div>
                 <div class="row p-0 m-0" style="height: 10%; text-align: center;">
-                    <div class="col-1"><img width="25" height="25" src="assets/images/google.png" alt="googleicon"></div>
-                    <div class="col-1"><img width="25" height="25" src="assets/images/linkedin.png" alt="linkedinicon"></div>
-                    <div class="col-1"><img width="25" height="25" src="assets/images/twitter.png" alt="twitterv"></div>
-                    <div class="col-1"><img width="25" height="25" src="assets/images/whatsapp.png" alt="whatsappicon"></div>
-                    <div class="col-1"><img width="25" height="25" src="assets/images/instagram.png" alt="instagramicon"></div>
-                    <div class="col-1"><img width="25" height="25" src="assets/images/facebook.png" alt="facebookicon"></div>
+                    <div class="col-1" (click)="goToSocialHandle('gmail')"><img width="25" height="25" src="assets/images/google.png" alt="googleicon"></div>
+                    <div class="col-1" (click)="goToSocialHandle('linkedin')"><img width="25" height="25" src="assets/images/linkedin.png" alt="linkedinicon"></div>
+                    <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/twitter.png" alt="twitterv"></div> -->
+                    <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/github.png" alt="twitterv"></div>
+                    <div class="col-1" (click)="goToSocialHandle('whatsapp')"><img width="25" height="25" src="assets/images/whatsapp.png" alt="whatsappicon"></div>
+                    <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/instagram.png" alt="instagramicon"></div> -->
+                    <!-- <div class="col-1" (click)="goToSocialHandle('github')"><img width="25" height="25" src="assets/images/facebook.png" alt="facebookicon"></div> -->
                 </div>
     
                 <div class="row p-0 m-0">
-                    <button type="button" class="btnClass my-2 mx-2" (click)="service.scrollToContactForm(contactForm)">
-                        <b>Contact Me</b>
+                    <button type="button" class="btnClass my-2 mx-2">
+                        <b>Email Me</b>
                     </button>
                 </div>
             </div>
             <div class="col-6">
                 <img src="assets/images/ContactMeIllustration.svg" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PROJECT SECTION START -->
+<div class="container-fluid" style="background-color: #f1faff;">
+    <div class="container">
+        <div class="row justify-content-md-center py-5" style="height: 250px;">
+            <p class="contactSubTitle subTitleFont" style="text-align: center;"><b>Contact Details</b> </p>
+            <div class="col-9 text-center">
+                
+                <div class="row justify-content-md-center">
+                    <div class="col-5">
+                        <p class="contactSubTitle subTitleFont">Address</p>
+                        <p class="contactDescription descriptionFont">B-003 Kishore Kunj 3, Near Old Viva College & Ganpati Mandir, Virar west, District: Palghar, Taluka: Vasai, Pincode: 401303 </p>
+                    </div>
+                    <div class="col-5">
+                        <p class="contactSubTitle subTitleFont">Get In Touch</p>
+                        <p class="contactDescription descriptionFont p-0 m-0">(+91) 8087024368 </p>
+                        <p class="contactDescription descriptionFont p-0 m-0">mo - fr: 09:00 to 20:00 (IST)</p>
+                        <p class="contactDescription descriptionFont p-0 m-0">shreyasambre00@gmail.com </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -47,8 +75,8 @@
                         <p class="contactSubTitle subTitleFont"> <b>Say Hello</b> </p>
                         <h2 class="contactTitle titleFont">Take a Coffee<br>& Drop Your Mail.</h2>
                         <p class="contactDescription descriptionFont">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            This contact form helps in case I'm not able to reach you on the above social handles, those filled details will reach
+                            automatically in my e-mail.
                         </p>
                     </div>
                 </div>
@@ -102,22 +130,24 @@
             </div>
             <div class="col-6" style="margin-top: 3%;">
 
-                <form #contactForm>
+                <form  #contactForm="ngForm" (ngSubmit)="sendMail(contactForm.form.value)">
                     <div class="form-group">
-                        <input class="form-control form-control-lg my-4 bg-light" type="text" placeholder="Name">
+                        <input class="form-control form-control-lg my-4 bg-light" type="text" [(ngModel)]="senderName" name="senderName" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg my-4 bg-light" type="text" placeholder="Email">
+                        <input class="form-control form-control-lg my-4 bg-light" type="text" [(ngModel)]="senderEmail" name="senderEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg my-4 bg-light" type="text" placeholder="Subject">
+                        <input class="form-control form-control-lg my-4 bg-light" type="text" [(ngModel)]="senderSubject" name="senderSubject" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control form-control-lg my-4 bg-light" type="text" rows="4" cols="50" placeholder="Message"></textarea>
-                        <!-- <textarea class="form-control contactInputFiled" rows="10" placeholder="Message"></textarea> -->
+                        <textarea class="form-control form-control-lg my-4 bg-light" type="text" rows="4" cols="50" [(ngModel)]="senderMsg" name="senderMsg" placeholder="Message"></textarea>
                     </div>
-                    <button type="button" class="btnClass"><b>Submit</b></button>
-                  </form>
+                    <button type="button" class="btnClass d-inline" type="submit"><b>Submit</b></button>
+                    <div *ngIf="emailSendSuccess === true" class="mx-2 alert alert-success d-inline p-2" role="alert">Email Send</div>
+                    <div *ngIf="emailSendSuccess === false" class="mx-2 alert alert-danger d-inline p-2" role="alert">Email Failed</div>
+                </form>
+                
             </div>
         </div>
     </div>

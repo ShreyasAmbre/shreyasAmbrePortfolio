@@ -18,7 +18,7 @@
 3. Number of pages :- Home, About, Contact. (for version 1.0)
 4. Color Schemes :- White Black and Orange
 5. Fonts :- Open Sans Regular & (SemiBold, Montserrat)
-6. Website Structure :- (for reference) https://template-kit.rootlayers.com/portosia/?storefront=envato-elements#
+6. Website Structure :- (for reference) controler
 
 ==========================================================================================================================
 
@@ -60,7 +60,7 @@ Hositing Guideline on GitHub Pages
 5. Onces Success, got to you repo and click on settings and then on pages on left side panel thier you can find the Hositing link and Visit Site Button to have a look of deployed website.
 
 
-Github Hosted Project Link:- 
+Github Hosted Project Link:- https://shreyasambre.github.io/shreyasAmbrePortfolio/home
 
 ==========================================================================================================================
 
