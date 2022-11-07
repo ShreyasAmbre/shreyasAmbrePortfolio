@@ -32,14 +32,18 @@
 -> Create Header & Footer (DONE) 13/08/2022
 
 3. Home Page Development (IN PROGRESS) 20th and 21st Aug 2022
--> Welcome & Basic Introduction Msg and Portfolio Image (Structure Done)
--> Skill Set Banner (Structure Done)
--> About Me Section (Structure Done)
--> Experience  (Structure Done)
--> Projects (Structure Done)
--> Download Resume Strip (Structure Done)
--> Recommendation of LinkedIn  (Structure Done)
+-> Welcome & Basic Introduction Msg (Done)
+-> About Me Section (Done)
+-> Experience  (Done)
+-> Download Resume Strip (Done)
+-> Recommendation of LinkedIn  (DONE)
+-> Projects (Project Finishing, Integration of Project on website Pending)
+-> Portfolio Image (Graphics Pending)
+-> Skill Set Banner (Graphics Pending)
 
+5. Contact Page Development (DONE) 15/08/2022
+-> Contact Form SMTP Integration (DONE)
+-> CORS error on Github Pages (PENDING) 
 
 4. About Page Development
 -> Introduction about me and my journey.
@@ -47,7 +51,6 @@
 -> Achievment (in About Section)
 -> Qualification (in About Section)
 
-5. Contact Page Development (DONE) 15/08/2022
 
 ==========================================================================================================================
 

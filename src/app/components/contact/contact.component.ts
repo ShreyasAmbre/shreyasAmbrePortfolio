@@ -52,12 +52,7 @@ export class ContactComponent implements OnInit {
     //   console.log("SMTP RES ===>", res)
     // })
 
-    /*
-      &from, &fromName, &msgFrom, &msgFromName  :- Owner of SMTP Account 
-
-    */
-
-    this.httpc.post(`http://api.elasticemail.com/v2/email/send?apikey=B449045B07BB7F598D7FEAFEF7EE414E8C519921A92D2E81109BF07AAE6B616D6E22B8227C53B20E0644FC52D56B5B54
+    this.httpc.post(`https://api.elasticemail.com/v2/email/send?apikey=B449045B07BB7F598D7FEAFEF7EE414E8C519921A92D2E81109BF07AAE6B616D6E22B8227C53B20E0644FC52D56B5B54
     &subject=${formData.senderSubject}
     &from=shreyasambre00@gmail.com
     &fromName=SHREYAS AMBRE

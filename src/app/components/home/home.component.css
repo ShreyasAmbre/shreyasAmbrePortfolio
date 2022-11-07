@@ -56,10 +56,14 @@
 }
 
 .recommdationProfilePic{
-    background-color: var(--recommendation-Profile-background);
+    /* background-color: var(--recommendation-Profile-background); */
+    background-color: #ffaa61;
     border-radius: 50%;
     height: 68px;
-    /* width: 85px; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../assets/images/recommendation_img/1.jfif); */
 }
 
 .recommandationContainer{
@@ -81,3 +85,26 @@
 .recommandationDescription{
     font-size: 22px;
 }
+
+/* Custom Scrollbar Styling  */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--btn-background-color); 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Custom Scrollbar Styling End  */
