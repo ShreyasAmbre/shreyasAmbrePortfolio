@@ -25,4 +25,10 @@ export class HomeComponent implements OnInit {
   goToSocialHandle(navigateToPage: string){
     this.service.openSocialHandle(navigateToPage)
   }
+
+  openGithubProject(projectName:string){
+    if(projectName === 'carpulling'){
+      window.open('https://github.com/ShreyasAmbre/carpooling#readme')
+    }
+  }
 }
