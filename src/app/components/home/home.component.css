@@ -108,3 +108,12 @@
 }
 
 /* Custom Scrollbar Styling End  */
+
+
+
+#confetti-canvas {
+    /* top: 10px; */
+    bottom: -30%;
+    width: 95%;
+    position: absolute;
+}

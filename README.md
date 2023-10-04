@@ -16,7 +16,7 @@
 		g. Statistics							:- 	Projects, Awards, Experience, Technology
 		h. footer								:- Contact Number, Social Media Handles, email
 3. Number of pages :- Home, About, Contact. (for version 1.0)
-4. Color Schemes :- White Black and Orange
+4. Color Schemes :- White, Black and Orange
 5. Fonts :- Open Sans Regular & (SemiBold, Montserrat)
 6. Website Structure :- (for reference) controler
 

@@ -1,11 +1,12 @@
 <!-- WELCOME SECITON START -->
 <div class="container-fluid" >
+    <canvas id="confetti-canvas"></canvas>
     <div class="container">
         <div class="row pt-5">
             <div class="col-6"  style="margin-top: 7%;">
                 <div class="row p-0 mx-0 my-2">
-                    <div class="col-12">
-                        <div class="subTitleDivider"></div>&nbsp;
+                    <div   class="col-12">
+                        <div  class="subTitleDivider"></div>&nbsp;
                         <p class="contactSubTitle subTitleFont"> <b>Welcome</b> </p>
                         <h2 class="contactTitle titleFont">Hello, My name’s</h2>
                         <h2 class="contactTitle titleFont">Shreyas Ambre. I'm</h2>
@@ -27,6 +28,7 @@
                 </div>
     
                 <div class="row p-0 mx-0 my-2">
+
                     <button type="button" class="btnClass homeBtnClass my-3 mx-2" (click)="navigateTo('contact')">
                         <b>Let's Connect</b>
                     </button>
@@ -118,7 +120,7 @@
 
 
 <!-- PROJECT SECTION START -->
-<div style="height: 920px;">
+<div style="height: 750px;">
     <div class="container-fluid" style="margin: 9% 0%; background-color: #f1faff;">
         <div class="container" style="position: relative;">
             <div class="row py-5" style="height: 350px;">
@@ -135,13 +137,13 @@
                     <div class="col-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body p-0">
-                                <div class="d-flex flex-column" style=" height: 100%;">
-                                    <div class="p-2">
+                                <div class="d-flex flex-column" style=" height: auto;">
+                                    <!-- <div class="p-2">
                                         <img src="assets/images/loginBanner.png" alt="project-image" style="height: 256px; margin: 0px 17%;">
-                                    </div>
+                                    </div> -->
                                     <div class="p-2">
                                         <h5 class="card-title">Car Pulling App</h5>
-                                        <p class="card-text">This project is built using Angular Framework concepts. This project helps to ask for the lift if any one of them are traveling through the same route which helps to reduce traffic problem & air pollution.</p>
+                                        <p class="card-text">This project is built using Angular Framework concepts. This project helps to ask for the lift if any one of them are traveling through the same route which helps to reduce traffic problem & air pollution. It was build to practice the Angular Framework to have hands on and get fimiliar with technology.</p>
                                     </div>
                                     <div class="px-2 py-3 mt-auto">
                                         <button class="btnClass my-1" (click)="openGithubProject('carpulling')" >Github Link</button>
@@ -154,16 +156,18 @@
                     <div class="col-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body p-0">
-                                <div class="d-flex flex-column" style=" height: 100%;">
-                                    <div class="p-2">
+                                <div class="d-flex flex-column">
+                                    <!-- <div class="p-2">
                                         <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
-                                    </div>
+                                    </div> -->
                                     <div class="p-2">
-                                        <h5 class="card-title">Team Management App</h5>
-                                        <p class="card-text">This app is built using concepts of Angular Framework & Firebase web service such as Real Time Database, Authentication, and Broadcasting of messages, It has role-based login whereas Admin can create dynamic UI, Where the team leader or project manager can assign tasks to employee working under him.</p>
+                                        <h5 class="card-title">Trading Platform</h5>
+                                        <p class="card-text">
+                                            m.Stock is a stocks trading platform on which I had worked using HTML, CSS, Javascript, Typescript, Angular, Angular Material, Firebase, REST API's, and many more. You can refer screenshot of this project for understanding of my project. As this is a commercial project I m not allowed disclose the code.
+                                        </p>
                                     </div>
                                     <div class="px-2 py-3 mt-auto">
-                                        <button class="btnClass my-1">Github Link</button>
+                                        <button class="btnClass my-1" (click)="openGithubProject('tradingproject')">Github Link</button>
                                     </div>
 
                                 </div>
@@ -174,15 +178,15 @@
                         <div class="card h-100">
                             <div class="card-body p-0">
                                 <div class="d-flex flex-column" style=" height: 100%;">
-                                    <div class="p-2">
+                                    <!-- <div class="p-2">
                                         <img src="assets/images/project1.jpg" alt="project-image" style="width: 100%;">
-                                    </div>
+                                    </div> -->
                                     <div class="p-2">
                                         <h5 class="card-title">Real Estate Management App</h5>
                                         <p class="card-text">This project is build with help of Angular as frontend & REST API's of backend. It help to onbard the client after client Purchace the Flat and their documentation and calcuation of Area is handled on this platform from start to end.</p>
                                     </div>
                                     <div class="px-2 py-3 mt-auto">
-                                        <button class="btnClass my-1">Github Link</button>
+                                        <button class="btnClass my-1" (click)="openGithubProject('realestateproject')">Github Link</button>
                                     </div>
 
                                 </div>
@@ -225,10 +229,10 @@
                         </div>
                         <div style="height: 30%; ">
                             <div class="row h-100 align-items-center">
-                                <div class="col-2">
+                                <!-- <div class="col-2">
                                     <div class="recommdationProfilePic"></div>
-                                </div>
-                                <div class="col-10 align-self-center">   
+                                </div> -->
+                                <div class="col-12 align-self-center">   
                                     <p class="m-0 p-0 recommandationName subTitleFont">Pooja Chaudhari</p>
                                     <p class="m-0 p-0 recommandationDesignation descriptionFont">Sr. Software Developer @ Rupeeseed Ventures Pvt. Ltd. </p>
                                 </div>
@@ -250,10 +254,10 @@
                         </div>
                         <div style="height: 30%; ">
                             <div class="row h-100 align-items-center">
-                                <div class="col-2">
+                                <!-- <div class="col-2">
                                     <div class="recommdationProfilePic"></div>
-                                </div>
-                                <div class="col-10 align-self-center">   
+                                </div> -->
+                                <div class="col-12 align-self-center">   
                                     <p class="m-0 p-0 recommandationName subTitleFont">Tejaswinee Patkar</p>
                                     <p class="m-0 p-0 recommandationDesignation descriptionFont">Project Manager @ Rupeeseed Ventures Pvt. Ltd. </p>
                                 </div>
