@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainServiceService } from 'src/app/services/main-service.service';
 import * as confetti from 'canvas-confetti';
+import * as AOS from 'aos';
 import { interval } from 'rxjs';
 @Component({
   selector: 'app-home',
@@ -13,6 +14,9 @@ export class HomeComponent implements OnInit, AfterViewInit{
   constructor(public service: MainServiceService, private route: Router ) { }
 
   ngOnInit(): void {
+    AOS.init({disable: 'mobile'});//AOS - 2
+    AOS.refresh();//refresh method is called on window resize and so on, as it doesn't 
+    // require to build new store with AOS elements and should be as light as possible.
   }
 
   ngAfterViewInit(): void {
