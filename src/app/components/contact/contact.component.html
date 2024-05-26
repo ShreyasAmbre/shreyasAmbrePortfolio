@@ -8,8 +8,8 @@
                         <p class="contactSubTitle subTitleFont"> <b>Contact</b> </p>
                         <h2 class="contactTitle titleFont">Get In Touch <br>With Me.</h2>
                         <p class="contactDescription descriptionFont">
-                            If you have any questions and want to get in touch with me, below are social networking sources where I will be.
-                            available their for quick response on your question.
+                            If you have any queries & want to get in touch with me, below are social networking sources where I will be
+                            available their for quick response on your queries.
                         </p>
                     </div>
                     
@@ -40,7 +40,7 @@
 
 
 <!-- PROJECT SECTION START -->
-<div data-aos="fade-down" class="container-fluid" style="background-color: #f1faff;">
+<!-- <div data-aos="fade-down" data-aos-duration="3000" class="container-fluid" style="background-color: #f1faff;">
     <div class="container">
         <div class="row justify-content-md-center py-5" style="height: 250px;">
             <p class="contactSubTitle subTitleFont" style="text-align: center;"><b>Contact Details</b> </p>
@@ -61,11 +61,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
-<div data-aos="fade-down" class="container-fluid mt-5" style="background-color: #ffffff; height:600px; margin-top: 10% !important;">
+<div data-aos="fade-down" data-aos-duration="3000"  class="container-fluid mt-5" style="background-color: #ffffff; height:600px; margin-top: 10% !important;">
     <div class="container ">
         <div class="row " style="height: 650px;">
             <div class="col-6" >
@@ -130,7 +130,7 @@
             </div>
             <div class="col-6" style="margin-top: 3%;">
 
-                <form  #contactForm="ngForm" (ngSubmit)="sendMail(contactForm.form.value)">
+                <form  #contactForm="ngForm" (blur)="test()" (ngSubmit)="sendMail(contactForm.form.value)">
                     <div class="form-group">
                         <input class="form-control form-control-lg my-4 bg-light" type="text" [(ngModel)]="senderName" name="senderName" placeholder="Name">
                     </div>
@@ -144,12 +144,36 @@
                         <textarea class="form-control form-control-lg my-4 bg-light" type="text" rows="4" cols="50" [(ngModel)]="senderMsg" name="senderMsg" placeholder="Message"></textarea>
                     </div>
                     <button type="button" class="btnClass d-inline" type="submit"><b>Submit</b></button>
-                    <div *ngIf="emailSendSuccess === true" class="mx-2 alert alert-success d-inline p-2" role="alert">Email Send</div>
-                    <div *ngIf="emailSendSuccess === false" class="mx-2 alert alert-danger d-inline p-2" role="alert">Email Failed</div>
+                    
+                    <div *ngIf="isMailSent" class="mx-2 alert alert-success d-inline p-2" role="alert">Email has been sent.</div>
+                    <div *ngIf="isMailSent == false" class="mx-2 alert alert-danger d-inline p-2" role="alert">Email failed to sent.</div>
                 </form>
+                
                 
             </div>
         </div>
     </div>
     
 </div>
+
+
+
+<div class="modal fade" #confirmModal tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

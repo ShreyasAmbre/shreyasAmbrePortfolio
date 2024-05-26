@@ -1,0 +1,6 @@
+1. Update Resume File - Done
+2. Email feature need to be added  - Done
+3. Photos need to be change - Pending
+4. Need to check the platform if it is Mobile or Tab show the other window to open in Desktop/Laptop - Done
+5. Dropdown fade animation fixed on refresh - Done
+6. Mail Sent - Validaiton - DOne

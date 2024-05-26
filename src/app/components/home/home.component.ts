@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     // this.fire('fireworks')
-    this.fire('schoolPride')
+    // this.fire('schoolPride')
   }
 
   fire(method:string, particleRatio?:any, opts?:any, ){

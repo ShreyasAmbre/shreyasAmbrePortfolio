@@ -107,3 +107,8 @@
 .form-control{
     font-family: 'OpenSans-Regular' !important;
 }
+
+
+.pointer{
+    cursor: pointer;
+}

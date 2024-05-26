@@ -26,6 +26,7 @@
     "elasticemail-angular": "^4.0.21",
     "firebase": "^9.12.1",
     "jquery": "^3.7.1",
+    "ngx-device-detector": "^2.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

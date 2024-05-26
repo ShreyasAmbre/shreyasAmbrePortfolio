@@ -1,0 +1,14 @@
+.msg-wrapper{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+
+}
+
+.contactTitle{
+    color: var( --secondary-color );
+    /* font-family: "Poppins", Sans-serif; */
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.3em;
+}

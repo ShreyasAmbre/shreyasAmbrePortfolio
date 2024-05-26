@@ -40,7 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFirestoreModule,
 
     ApiModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [MainServiceService, {provide: BASE_PATH, useValue: 'http://127.0.0.1:8080'}],
   bootstrap: [AppComponent]
